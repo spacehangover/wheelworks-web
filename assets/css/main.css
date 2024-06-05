@@ -29,7 +29,7 @@
   --default-color: #444444;
 
   /* Heading Color - This color is used for titles, headings and secondary elements. */
-  --heading-color: #37517e;
+  --heading-color: #000000;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
   --accent-color: #47b2e4;
@@ -101,7 +101,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #3d4d6a;
+  --background-color: #000000;
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
@@ -172,7 +172,7 @@ h6 {
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: rgba(40, 58, 90, 0.9);
+  --background-color: #000000;
 }
 
 /*--------------------------------------------------------------
@@ -1257,7 +1257,7 @@ section,
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  --background-color: #000000;
+  --background-color: #003d2d;
   --default-color: #ffffff;
   --contrast-color: #ffffff;
   padding: 120px 0;
@@ -2139,4 +2139,18 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.information h2{
+  font-weight: bold;
+  color: black;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.information h3{
+  color: #545353;
+  font-size: x-large;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
