@@ -32,7 +32,7 @@
   --heading-color: #000000;
 
   /* Accent Color - This is the main accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out. */
-  --accent-color: #47b2e4;
+  --accent-color: #003d2d;
 
   /* Contrast Color - This is a color used for text when the background color is one of the heading, accent, or default colors. Its purpose is to ensure proper contrast and readability when placed over these more dominant colors. */
   --contrast-color: #ffffff;
@@ -104,7 +104,7 @@ h6 {
   --background-color: #000000;
   --heading-color: #ffffff;
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #000000;
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .product-details {
+            display: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-details img {
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .product-details h2 {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .product-details p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-details .price {
+            font-size: 24px;
+            color: green;
+            margin: 20px 0;
+        }
+
+        .product-details button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .product-details button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Compare Bambu Lab Printers</h1>
+        <select id="productSelect">
+            <option value="">Select a product</option>
+            <option value="x1-carbon">X1 Carbon</option>
+            <option value="p1s">P1S</option>
+            <option value="a1">A1</option>
+        </select>
+
+        <div id="x1-carbon" class="product-details">
+            <img src="X1-Carbon.jpg" alt="X1 Carbon">
+            <h2>X1 Carbon</h2>
+            <p>Build Volume: 256 x 256 x 256 mm³</p>
+            <p class="price">US$ 1199.00</p>
+            <button>Buy now</button>
+        </div>
+
+        <div id="p1s" class="product-details">
+            <img src="P1S.jpg" alt="P1S">
+            <h2>P1S</h2>
+            <p>Build Volume: 256 x 256 x 256 mm³</p>
+            <p class="price">US$ 699.00</p>
+            <button>Buy now</button>
+        </div>
+
+        <div id="a1" class="product-details">
+            <img src="A1.jpg" alt="A1">
+            <h2>A1</h2>
+            <p>Build Volume: 256 x 256 x 256 mm³</p>
+            <p class="price">US$ 399.00</p>
+            <button>Buy now</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('productSelect').addEventListener('change', function() {
+            var selectedProduct = this.value;
+            var products = document.querySelectorAll('.product-details');
+            
+            products.forEach(function(product) {
+                product.style.display = 'none';
+            });
+            
+            if (selectedProduct) {
+                document.getElementById(selectedProduct).style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
