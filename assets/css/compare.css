@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 .compare-table {
+    font: "Inter", sans-serif;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 20vh;
@@ -21,6 +24,11 @@
     width: 200px;
     padding: 10px;
     font-size: 16px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    
 }
 
 .products-display {
@@ -64,12 +72,12 @@
 
 .product-details .price {
     font-size: 24px;
-    color: green;
+    color: #003d2d;
     margin: 20px 0;
 }
 
 .product-details button {
-    background-color: green;
+    background-color: #003d2d;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -79,20 +87,29 @@
 }
 
 .product-details button:hover {
-    background-color: darkgreen;
+    background-color: #003d2d;
 }
 
 @media (max-width: 768px) {
     .product {
-        width: 45%;
+        width: 50%;
+    }
+    .product select{
+        width: 70%;
     }
     .product:nth-child(3) {
         display: none;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 340px) {
     .product {
         width: 100%;
+    }
+    .product:nth-child(2) {
+        display: none;
+    }
+    .product:nth-child(3) {
+        display: none;
     }
 }
